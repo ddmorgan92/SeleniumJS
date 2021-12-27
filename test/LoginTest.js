@@ -1,7 +1,6 @@
 // filename: test/LoginTest.js
 require('chromedriver');
 const { Builder } = require('selenium-webdriver');
-
 const assert = require('assert');
 const { isTypedArray } = require('util/types');
 
