@@ -26,8 +26,8 @@ describe('Locate', function() {
         var redButtonMessage = await driver
             .findElement(By.className('button alert'))
             .getText()
-        var expectedResultStr = 'baz';
+        var expectedResultArr = ['foo', 'bar', 'baz', 'qux']
 
-        assert(redButtonMessage == expectedResultStr, "The button text is not correct, something went wrong.")
+        assert(expectedResultArr.includes(redButtonMessage), "The button text is not correct, something went wrong.")
     })
 })
